@@ -16,8 +16,9 @@
                 </mat-card-content>
                 <mat-card-actions>
                     <div fxLayout="row" fxLayoutAlign="space-between center">
-                        <button mat-button color="warn" (click)="loginGoogle()" type="button"
-                            [disabled]="loading">Google Login</button>
+                        <button mat-button color="warn" type="button" [disabled]="loading">Google Login</button>
+                        <!-- <button mat-button color="warn" (click)="loginGoogle()" type="button"
+                            [disabled]="loading">Google Login</button>-->
                         <button mat-button color="primary" type="submit" [disabled]="!loginForm.valid || loading">
                             <mat-icon>check</mat-icon>Login
                         </button>
